@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="dom.css">
+    <title>Dom</title>
+</head>
+<body>
+
+    <div class="container" style="background-color:peachpuff;border: 30px;padding:30px; border-radius: 20px;margin: 20px;margin-top: 30px;margin-bottom: 30px;" >
+         <div>
+        <h3 class="heading" style="position:static;text-align: center;">BEST ONLINE STORE</h3> </div>
+        <hr class="line" style="display:20px;height: 10px;width: 500px; background-color: saddlebrown;border-radius: 5rem; ">
+        <div class="productOne">
+            <div class="icon">
+                <button style="background-color:aliceblue;color:black; border: 1px;border-radius: 2px;"><i class="bi bi-trash3"></i></button>
+            <button id="heart-btn2" onclick="Toggle1()"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="image">
+                <img src= "heels.jpg" alt="Me" />
+             </div>
+             <div class="down">
+                <div class="wanny">
+                    <h2 class="anny">LUXURY</h2>
+                    <P class="nny" style="font-style:italic;">New Red Heel</P>
+                    <p class="ny">$250</p>
+                </div>
+                <div class="addplus" style="text-align:start;display: flex;">
+                    <button style="background:none; border: none;" onclick="plus()"><i class="bi bi-plus-square-fill" ></i></button>
+                    <p style= "font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" id="shoe">0</p>
+                    <button style="background:none; border: none;"><i class="bi bi-dash-square-fill" onclick="minus()"></i></button>
+
+                </div>
+             </div>
+            </div>
+            <hr class="line" style="display:20px;height: 10px;background-color: saddlebrown;border-radius: 5rem; ">
+            <div class="productTwo">
+                <div class="icon">
+                    <button style="background:none; border: none;"><i class="bi bi-trash3"></i></button>
+                    <button id="heart-btn2" onclick="Toggle2()"><i class="bi bi-heart-fill" style="color:grey" ></i></button>
+                </div>
+    
+                <div class="image">
+                    <img src="white-shoe.jpg" alt="Me" />
+                 </div>
+                 <div class="down">
+                    <div class="wanny">
+                        <h2 class="anny">BRIDAL SNOW-WHITE</h2>
+                        <p class="ny">$500</p>
+                    </div>
+                    <div class="addplus" style="text-align:start;display: flex;">
+                        <button style="background:none; border: none;" onclick="pluss()"><i class="bi bi-plus-square-fill"></i></button>
+                        <p style= "font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" id="shoes">0</p>
+                        <button style="background:none; border: none;"><i class="bi bi-dash-square-fill" onclick="minuss()"></i></button>
+    
+                    </div>
+    
+                </div>
+                <hr class="line" style="display:20px;height: 10px;background-color: saddlebrown;border-radius: 5rem; ">
+        </div>
+        <div class="productTwo">
+            <div class="icon">
+                <button style="background:none; border: none;" id="delete"  ><i class="bi bi-trash3"></i></button>
+                <button id="heart-btn3" onclick="Toggle1()"><i class="bi bi-heart-fill" style="color:grey" ></i></button>
+            </div>
+        </div>
+        <div class="productThree">
+            
+
+            <div class="image">
+                <img src="ladyinred.jpg" alt="Nike Jordan" />
+             </div>
+             <div class="down" >
+                <div class="wanny">
+                    <h2 class="anny"  >SEXDUCTIVE RED</h2>
+                    <P class="nny" style="font-style: italic;">Grand Style</P>
+                    <p class="ny" >$1000</p>
+                </div>
+                <div class="addplus" style="text-align:start;display: flex;">
+                    <button style="background:none; border: none;" onclick="plusss()"><i class="bi bi-plus-square-fill" ></i></button>
+                    <p style= "font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" id="shoess">0</p>
+                    <button style="background:none; border: none;"><i class="bi bi-dash-square-fill" onclick="minusss()"></i></button>
+
+                </div>
+            </div>
+        </div>
+        <hr class="line" style="display:20px;height: 10px;background-color: saddlebrown;border-radius: 5rem; ">
+        <div class="checko">
+
+            <h3 style= "font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bold; margin-bottom: 0px;  padding-bottom: 0px; text-align: center;">CARD SUMMARY</h3>
+            <div class="sub">
+                <p style= "font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: mediun; margin-top: 0px; padding-top: 0px;">TOTAL</p>
+                <p style= "font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bold; color:blue;" id="total">$0</p>
+            </div>
+            <button class="check" id="checkoutButton">CHECKOUT $0</button>
+
+        </div>
+
+    </div>
+    <script src="dom.js"></script>
+</body>
+</html>
